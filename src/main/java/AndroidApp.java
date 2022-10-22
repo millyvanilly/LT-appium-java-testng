@@ -13,9 +13,9 @@ import java.util.List;
 public class AndroidApp {
 
     String userName = System.getenv("LT_USERNAME") == null ?
-            "username" : System.getenv("LT_USERNAME"); //Add username here
+            "emilia.apter" : System.getenv("LT_USERNAME"); //Add username here
     String accessKey = System.getenv("LT_ACCESS_KEY") == null ?
-            "accessKey" : System.getenv("LT_ACCESS_KEY"); //Add accessKey here
+            "V81RjOFxAZMwpJLU7mA9KAnIduqY50BZ6GDPLgEjNhVMrnopQB" : System.getenv("LT_ACCESS_KEY"); //Add accessKey here
 
     public String gridURL = "@mobile-hub.lambdatest.com/wd/hub";
 
@@ -33,7 +33,7 @@ public class AndroidApp {
             capabilities.setCapability("platformName", platform);
             capabilities.setCapability("isRealMobile", true);
             //AppURL (Create from Wikipedia.apk sample in project)
-            capabilities.setCapability("app", "APP_URL"); //Enter your app url
+            capabilities.setCapability("app", "lt://APP10160271581666318401560702"); //Enter your app url
             capabilities.setCapability("deviceOrientation", "PORTRAIT");
             capabilities.setCapability("console", true);
             capabilities.setCapability("network", false);
